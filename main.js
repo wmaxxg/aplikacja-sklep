@@ -74,13 +74,12 @@ productList.addEventListener('click', (event)=>{
 function showCart()
 {
    i=0
-   console.log("działa")
    koszyk.forEach(cartElement =>
    {
       console.log(cartElement)
       const div = document.createElement('div')
       div.className="cartelement"
-      div.innerHTML=`<p>${cartElement.id}, ilość: ${cartElement.price}</p><span onclick="koszyk.splice(id,1)" class='removefromcart'>&#9842;</span>`
+      div.innerHTML=`<p>${cartElement.id}, ilość: ${cartElement.price}</p><span onclick="koszyk.splice(${i},1)" class='removefromcart'>&#9842;</span>`
       cartContent.appendChild(div)
       i++
    })
