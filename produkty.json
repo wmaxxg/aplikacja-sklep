@@ -1,8 +1,20 @@
 [
     {"name":"essa","price":10,"picloc":"essa.jpg","unit":"kg"},
-    {"name":"koń","price":20,"picloc":"essa.jpg","unit":"szt"},
+    {"name":"koń","price":20,"picloc":"capacitor.jpg","unit":"szt"},
     {"name":"byk","price":40,"picloc":"essa.jpg","unit":"szt"},
     {"name":"papryka","price":100,"picloc":"essa.jpg","unit":"kg"},
-    {"name":"gitara","price":1000,"picloc":"essa.jpg","unit":"m"},
-    {"name":"pustak","price":10000000,"picloc":"essa.jpg","unit":"m<sub>2</sub>"}
+    {"name":"gitara","price":1000,"picloc":"capacitor.jpg","unit":"m"},
+    {"name":"pustak","price":10000000,"picloc":"capacitor.jpg","unit":"m"},
+    {"name":"essa","price":10,"picloc":"essa.jpg","unit":"kg"},
+    {"name":"koń","price":20,"picloc":"capacitor.jpg","unit":"szt"},
+    {"name":"byk","price":40,"picloc":"essa.jpg","unit":"szt"},
+    {"name":"papryka","price":100,"picloc":"essa.jpg","unit":"kg"},
+    {"name":"gitara","price":1000,"picloc":"capacitor.jpg","unit":"m"},
+    {"name":"pustak","price":10000000,"picloc":"capacitor.jpg","unit":"m"},
+    {"name":"essa","price":10,"picloc":"essa.jpg","unit":"kg"},
+    {"name":"koń","price":20,"picloc":"capacitor.jpg","unit":"szt"},
+    {"name":"byk","price":40,"picloc":"essa.jpg","unit":"szt"},
+    {"name":"papryka","price":100,"picloc":"essa.jpg","unit":"kg"},
+    {"name":"gitara","price":1000,"picloc":"capacitor.jpg","unit":"m"},
+    {"name":"pustak","price":10000000,"picloc":"capacitor.jpg","unit":"m"}
 ]
