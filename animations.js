@@ -16,7 +16,7 @@ document.addEventListener('scroll', ()=>{
     menuBoxDivs[2].classList.remove('onbanner')
     menuBoxDivs[3].classList.remove('onbanner')
     nav.style.justifyContent="flex-end"
-    navWrapper.style.background="#2b2b2b"
+    navWrapper.style.background="#202020"
  }
  else
  {
