@@ -16,21 +16,28 @@
         <div id="navwrapper">
             <p id="es">ES</p>
             <nav>
-                <div class="menuboxdiv onbanner" onclick="alert('ello')">Główna</div>
+                <div class="menuboxdiv onbanner">Główna</div>
                 <div class="menuboxdiv onbanner">O sklepie</div>
                 <div class="menuboxdiv onbanner">Katalog</div>
-                <div class="menuboxdiv onbanner">Koszyk</div>
+                <div class="menuboxdiv onbanner" onclick="showCart()">Koszyk</div>
             </nav>
         </div>
         <article>
             <div id="productlist">
 
             </div>
+            <div id="oknodialogowe" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <div class="productbuy"></div>
+                  <div class="cart"></div>
+                </div>
+            </div>
         </article>
         <footer>
             ES &copy; 2021 all rights reserved
         </footer>
     </body>
-    <script src="baza.js"></script>
-    <script src="animations.js"></script>
+    <script src="productbase.js"></script>
+    <script src="main.js"></script>
 </html>
