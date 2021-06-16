@@ -128,6 +128,7 @@ footer
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    border-radius: 3px;
 }
 .close 
 {
@@ -146,6 +147,7 @@ footer
 {
     width: 100%;
     display: flex;
+    align-items: center;
 }
 .infodiv
 {
@@ -154,6 +156,21 @@ footer
 .controldiv
 {
     flex-basis: 50%;
+}
+.controldiv input
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1vw;
+}
+.controldiv button
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2vw;
+}
 }
 .infodiv img
 {
@@ -173,16 +190,24 @@ footer
 .cartelement
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-size: 30px;
+}
+.cartelement:hover
+{
+    background-color: #00000046;
 }
 .cartelement span
 {
     font-size: 50px;
+    padding: 0 5px;
 }
 .cart button
 {
+    display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 10vw;
+    padding: .5vw;
 }

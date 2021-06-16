@@ -80,7 +80,7 @@ function showCart()
       console.log(cartElement)
       const div = document.createElement('div')
       div.className="cartelement"
-      div.innerHTML=`<p>${cartElement.id}, ilość: ${cartElement.price}</p><span onclick="koszyk.splice(id,1)" class='removefromcart'>&times;</span>`
+      div.innerHTML=`<p>${cartElement.id}, ilość: ${cartElement.price}</p><span onclick="koszyk.splice(id,1)" class='removefromcart'>&#9842;</span>`
       cartContent.appendChild(div)
       i++
    })
