@@ -79,7 +79,7 @@ function showCart()
       console.log(cartElement)
       const div = document.createElement('div')
       div.className="cartelement"
-      div.innerHTML=`<p>${cartElement.id}, ilość: ${cartElement.price}</p><span onclick="koszyk.splice(${i},1)" class='removefromcart'>&#9842;</span>`
+      div.innerHTML=`<p>${cartElement.id}, Cena: ${cartElement.price}</p><span onclick="koszyk.splice(${i},1)" class='removefromcart'>&#9842;</span>`
       cartContent.appendChild(div)
       i++
    })
@@ -124,14 +124,20 @@ dialogWindow.addEventListener('click', async (event)=>{
          }
          break;
       case 'order':
-         min = Math.ceil(1);
-         max = Math.floor(10000);
-         do
-            orderId = Math.floor(Math.random() * (max - min)) + min;
-         while(OrderTable.find(order => order==orderId))
-         OrderTable.push(orderId)
-         alert(`Nr twojego zamówienia to ${orderId}`)
-         console.log(OrderTable)
+         console.log(koszyk)
+         if(koszyk.length==0)
+            alert('twój koszyk jest pusty, najpierw coś zamów')
+         else
+         {
+            min = Math.ceil(1);
+            max = Math.floor(10000);
+            do
+               orderId = Math.floor(Math.random() * (max - min)) + min;
+            while(OrderTable.find(order => order==orderId))
+            OrderTable.push(orderId)
+            alert(`Nr twojego zamówienia to ${orderId}`)
+            console.log(OrderTable)
+         }
          break; 
       default:break;
    }
@@ -139,6 +145,6 @@ dialogWindow.addEventListener('click', async (event)=>{
 function changeMainPrice(amount, price) 
 {
    const fullPrice = document.getElementsByClassName('cc')[0]
-   cenacalosciowa = amount*price
+   cenacalosciowa = (amount*price).toFixed(2)
    fullPrice.innerHTML=`Cena całościowa: ${cenacalosciowa} zł`
 }

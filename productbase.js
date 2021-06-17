@@ -1,5 +1,5 @@
 const productList = document.getElementById('productlist')
-fetch("./produkty.json")
+fetch("produkty.json")
 .then(response => {
    return response.json();
 })
